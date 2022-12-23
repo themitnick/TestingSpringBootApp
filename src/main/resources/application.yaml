@@ -1,3 +1,15 @@
 spring:
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
+  properties:
+    hibernate:
+#      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://localhost:3307/<your BD>?useSSl=false
+    username: <your username>
+    password: <your password>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 9090
